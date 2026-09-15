@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingster University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fas fa-envelope"></i> contact@KingsterKids.edu</span>
+            <span><i class="fas fa-phone"></i> +1-3435-2356-222</span>
+        </div>
+        <div class="top-bar-right">
+            <a href="admissions.html">Alumni</a>
+            <a href="admissions.html">Calendar</a>
+            <a href="admissions.html">Portal</a>
+            <a href="support.html" class="support-btn">Support KU</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-wrap">
+            <div class="logo-shield"><i class="fas fa-shield-alt"></i></div>
+            <span class="logo-text">Kingster HighSchool</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="athletics.html">Athletics</a></li>
+            <li><a href="school-life.html">School Life</a></li>
+            <li><a href="#" class="search-icon" aria-label="Open search" aria-expanded="false"><i class="fas fa-search"
+                        aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slides" aria-hidden="true">
+            <img class="hero-slide is-active"
+                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80"
+                alt="Students walking across a school campus">
+            <img class="hero-slide"
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&q=80"
+                alt="Students learning in a classroom">
+            <img class="hero-slide"
+                src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1920&q=80"
+                alt="Students gathered in a school library">
+        </div>
+        <div class="hero-content">
+            <h2>Welcome to</h2>
+            <h1>Kingster School</h1>
+            <a href="school-life.html" class="btn">Take A Tour</a>
+        </div>
+    </section>
+
+    <!-- 3 Feature Cards Banner -->
+    <div class="feature-cards">
+        <div class="feature-card">
+            <i class="fas fa-university"></i>
+            <div class="feature-info">
+                <h3>School Life</h3>
+                <a href="school-life.html">Learn More &rarr;</a>
+            </div>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-book-open"></i>
+            <div class="feature-info">
+                <h3>Academics</h3>
+                <a href="academics.html">Learn More &rarr;</a>
+            </div>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-football-ball"></i>
+            <div class="feature-info">
+                <h3>Athletics</h3>
+                <a href="athletics.html">Learn More &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Grid Section -->
+    <section class="info-section">
+        <div class="info-box">
+            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I
+                enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</p>
+            <a href="#" class="read-more">Learn More &rarr;</a>
+        </div>
+        <div class="info-box">
+            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I
+                enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</p>
+            <a href="#" class="read-more">Learn More &rarr;</a>
+        </div>
+        <div class="info-box">
+            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I
+                enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</p>
+            <a href="#" class="read-more">Learn More &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Video Tour & Admissions Banner -->
+    <div class="split-banner">
+        <div class="video-tour">
+            <h2>School Video Tour</h2>
+            <p>Take a tour in Kingster and you will find the best school in the state. The video will take you to every
+                places in this school.</p>
+            <div class="play-btn-wrap" id="playVideoBtn">
+                <div class="play-circle"><i class="fas fa-play"></i></div>
+                <span>Play Video</span>
+            </div>
+        </div>
+        <div class="admissions-banner">
+            <h4>Apply for Admission</h4>
+            <h2>Fall 2019 applications are now open</h2>
+            <p>We don't just give students an education and experiences that set them up for success in a career. We
+                help them succeed in their career-to discover a field they're passionate about and dare to lead it.</p>
+            <a href="admissions.html" class="btn">Apply Now</a>
+        </div>
+    </div>
+
+    <!-- Course Search Section -->
+    <section class="course-search">
+        <h2>Search For Courses</h2>
+        <div class="search-grid">
+            <input type="text" class="search-field" placeholder="Keywords">
+            <input type="text" class="search-field" placeholder="Course ID">
+            <select class="search-field">
+                <option value="">Department</option>
+            </select>
+            <select class="search-field">
+                <option value="">Level</option>
+            </select>
+            <select class="search-field">
+                <option value="">Instructor</option>
+            </select>
+            <select class="search-field">
+                <option value="">Semester</option>
+            </select>
+        </div>
+        <a href="#" class="btn" id="searchCoursesBtn">Search Courses</a>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="news-events">
+        <div>
+            <h2 class="section-title">School News & Updates</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-date">June 6, 2016 by James Smith</div>
+                    <a href="#" class="news-title">Professor Albert joint research on mobile money in Tanzania</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">June 6, 2016 by James Smith</div>
+                    <a href="#" class="news-title">A Global MBA for the next generation of business leaders</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">June 5, 2016 by James Smith</div>
+                    <a href="#" class="news-title">Professor Alexa is interviewed about Twitter's valuation</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">June 6, 2016 by James Smith</div>
+                    <a href="#" class="news-title">Kingster Public Safety Survey open through Nov. 30</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="section-title">Kingster Events</h2>
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80"
+                    alt="Conference" class="event-img">
+                <div class="event-content">
+                    <div class="event-date-box">
+                        <span class="day">17</span>
+                        <span class="month">Dec</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Fintech & Key Investment Conference</h3>
+                        <div class="event-meta"><i class="far fa-clock"></i> 1:00 pm - 1:00 pm</div>
+                        <div class="event-meta"><i class="fas fa-map-marker-alt"></i> Kingster Grand Hall</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <h4>Our Campus</h4>
+                <p>Kingster HighSchool<br>Academics<br>Box 35300<br>1810 Campus Way NE<br>Bothell, WA 98011-8246</p>
+                <p>+1-2534-4456-345<br>admin@kingsteruni.edu</p>
+            </div>
+            <div class="footer-col">
+                <h4>Planning & Administration</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Campus Safety</a></li>
+                    <li><a href="#">Food Services</a></li>
+                    <li><a href="#">Campus Life</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Financial Aid</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Academics</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Canvas</a></li>
+                    <li><a href="#">Catalyst</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Time Schedule</a></li>
+                    <li><a href="#">Facility Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Subscribe To Newsletter</h4>
+                <p>Get updates to news & events</p>
+                <div class="newsletter-form">
+                    <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Your Email Address">
+                    <a href="#" class="btn" id="subscribeBtn" style="padding: 12px 20px;">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright All Right Reserved 2025, GoodLayers</p>
+            <div>
+                <a href="#" style="color: #888; text-decoration: none; margin-left: 20px;">Privacy Policy</a>
+                <a href="#" style="color: #888; text-decoration: none; margin-left: 20px;">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -282,6 +282,10 @@
     gap: 20px;
 }
 
+.feature-blocks .feature-card {
+    display: block;
+}
+
 .feature-card:nth-child(1) {
     background-color: #b92b27;
 }
@@ -1262,8 +1266,22 @@ footer {
 
 .apply-table {
     width: 100%;
+    min-width: 520px;
     border-collapse: collapse;
     margin-bottom: 30px;
+}
+
+.table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll .apply-table {
+    display: table;
+    max-width: none;
+    overflow: visible;
+    white-space: normal;
 }
 
 .apply-table th {
@@ -2574,5 +2592,57 @@ ul {
 
     .navbar ul {
         display: none;
+    }
+}
+
+/* Final responsive fixes for the alternate support page layout. */
+@media (max-width: 900px) {
+
+    .info-split-section>*,
+    .apply-intro-grid>*,
+    .grid-two-column>*,
+    .services-grid>* {
+        min-width: 0;
+    }
+
+    .checklist li,
+    .checklist li>* {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .main-header .navbar {
+        min-height: 0;
+        margin-top: 15px;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+        position: static;
+    }
+
+    .main-header .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px 14px;
+    }
+
+    .main-header .navbar a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header .nav-flex {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .main-header .navbar {
+        width: 100%;
+    }
+
+    .main-header .navbar ul {
+        justify-content: flex-start;
     }
 }
